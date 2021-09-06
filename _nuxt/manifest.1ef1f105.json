@@ -1,0 +1,12 @@
+{
+  "name": "IIIF Viewers",
+  "short_name": "IIIF",
+  "description": "IIIF Viewers",
+  "icons": [],
+  "start_url": "/viewer/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "ja",
+  "orientation": "portrait"
+}
