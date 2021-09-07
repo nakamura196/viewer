@@ -11,22 +11,22 @@ export default {
   mounted() {
     const query = this.$route.query
 
-    if (!query.params) {
+    if (!query.q) {
       return
     }
 
-    const items = JSON.parse(query.params)
+    const items = JSON.parse(query.q)
 
     const windows = []
     for (let i = 0; i < items.length; i++) {
       const item = items[i]
       const window = {
         id: 'window_' + i,
-        manifestId: item.m,
+        manifestId: item.manifest,
       }
       windows.push(window)
-      if (item.c) {
-        window.canvas = item.c
+      if (item.canvas) {
+        window.canvas = item.canvas
       }
     }
 

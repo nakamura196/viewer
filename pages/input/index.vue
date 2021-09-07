@@ -67,11 +67,11 @@ export default {
       for (const item of this.items) {
         if (item.manifest) {
           const query = {
-            m: item.manifest,
+            manifest: item.manifest,
           }
           items.push(query)
           if (item.canvas) {
-            query.c = item.canvas
+            query.canvas = item.canvas
           }
         }
       }
@@ -80,7 +80,7 @@ export default {
         this.localePath({
           name: 'mirador',
           query: {
-            params: JSON.stringify(items),
+            q: JSON.stringify(items),
           },
         })
       )
