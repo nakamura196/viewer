@@ -11,6 +11,12 @@ export default {
   mounted() {
     const query = this.$route.query
 
+    let lang = 'ja'
+
+    if (query.lang) {
+      lang = query.lang
+    }
+
     if (!query.q) {
       return
     }
@@ -23,6 +29,8 @@ export default {
       const window = {
         id: 'window_' + i,
         manifestId: item.manifest,
+        imageToolsEnabled: true,
+        imageToolsOpen: true,
       }
       windows.push(window)
       if (item.canvas) {
@@ -62,6 +70,7 @@ export default {
       id: 'demo',
       windows,
       workspace,
+      language: lang,
     }
     Mirador.viewer(config, [...miradorImageToolsPlugin])
   },
