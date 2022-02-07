@@ -22,10 +22,10 @@ const basePath = baseUrl + baseDir
 
 // meta
 const lang = 'ja'
-const siteName = 'IIIF Viewers'
+const siteName = 'Digital Archive Tools'
 env.siteName = siteName
 
-const siteDesc = 'IIIF Viewers'
+const siteDesc = 'Digital Archive Tools'
 env.siteDesc = siteDesc
 
 const footer = 'ldas'

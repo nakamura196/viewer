@@ -4,7 +4,7 @@
       <v-navigation-drawer v-model="drawer" app :temporary="true" width="300">
       </v-navigation-drawer>
 
-      <v-app-bar dark>
+      <v-app-bar dark color="success" flat>
         <v-app-bar-nav-icon v-if="false" @click.stop="drawer = !drawer" />
         <v-toolbar-title>
           <nuxt-link
@@ -23,7 +23,7 @@
 
         <v-menu offset-y>
           <template #activator="{ on }">
-            <v-btn depressed btn v-on="on">
+            <v-btn depressed btn icon v-on="on">
               <v-icon>mdi-translate</v-icon>
             </v-btn>
           </template>

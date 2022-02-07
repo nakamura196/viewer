@@ -1,3 +1,40 @@
 <template>
-  <div></div>
+  <div>
+    <v-container class="my-5">
+      <v-row>
+        <v-col cols="6" md="4" v-for="(item, key) in items" :key="key">
+          <v-card class="pa-4" outlined flat>
+            <h3>
+            <nuxt-link :to="localePath({name: item.name})">
+              
+              {{item.label}}
+              
+            </nuxt-link>
+            </h3>
+            <p v-if="item.description">{{item.description}}</p>
+          </v-card>
+        </v-col>
+        </v-row>
+    </v-container>
+  </div>
 </template>
+<script>
+export default {
+  layout: 'default',
+  components: {},
+  data() {
+    return {
+      items: [
+        {
+          "label" : this.$t("IIIF Image Downloader"),
+          "name" : "iiif-downloader"
+        },
+        {
+          "label" : this.$t("IIIF Viewers"),
+          "name" : "input"
+        }
+      ]
+    }
+  }
+}
+</script>
