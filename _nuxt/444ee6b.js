@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{291:function(e){e.exports=JSON.parse('{"IIIF Viewers":"IIIF Viewers","ldas":"ldas","add":"Add","open":"Open","manifest":"Manifest","canvas":"Canvas"}')}}]);

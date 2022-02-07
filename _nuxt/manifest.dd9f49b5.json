@@ -1,7 +1,7 @@
 {
-  "name": "IIIF Viewers",
+  "name": "Digital Archive Tools",
   "short_name": "IIIF",
-  "description": "IIIF Viewers",
+  "description": "Digital Archive Tools",
   "icons": [],
   "start_url": "/viewer/?standalone=true",
   "display": "standalone",
