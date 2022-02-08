@@ -36,6 +36,7 @@
     "firebase": "^8.2.1",
     "firebase-tools": "^9.1.0",
     "fs": "^0.0.1-security",
+    "jszip": "^3.7.1",
     "leaflet": "^1.7.1",
     "mirador": "^3.2.0",
     "mirador-image-tools": "^0.11.0",

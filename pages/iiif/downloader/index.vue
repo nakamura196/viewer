@@ -64,6 +64,7 @@
   </div>
 </template>
 <script>
+import jszip from 'jszip'
 export default {
   layout: 'default',
   components: {},
@@ -81,7 +82,7 @@ export default {
     }
   },
   mounted() {
-    this.loadJSZipFromCDN()
+    //this.loadJSZipFromCDN()
     this.manifest = this.$route.query.manifest
     this.size = this.$route.query.size || this.size
 
@@ -99,11 +100,6 @@ export default {
     }
   },
   methods: {
-    loadJSZipFromCDN(){
-      let script = document.createElement("script");
-      script.src = "https://cdn.jsdelivr.net/npm/jszip@3.2.1/dist/jszip.js";
-      document.head.append(script);
-    },
     async downloadImages() {
       this.init(true, "")
 
@@ -159,7 +155,7 @@ export default {
     },
 
     generateImagesZip(images, label) {
-      let zip = new JSZip();
+      let zip = new jszip();
 
       // フォルダ作成
       const folderName = label;
