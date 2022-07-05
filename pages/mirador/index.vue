@@ -31,10 +31,11 @@ export default {
         manifestId: item.manifest,
         imageToolsEnabled: true,
         imageToolsOpen: true,
+        view: 'single',
       }
       windows.push(window)
       if (item.canvas) {
-        window.canvas = item.canvas
+        window.canvasId = item.canvas
       }
     }
 

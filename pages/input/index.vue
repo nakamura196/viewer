@@ -12,7 +12,7 @@
           <v-text-field
             v-model="item.manifest"
             :label="$t('manifest')"
-            filled
+            outlined
             rounded
             single-line
             hide-details
@@ -24,7 +24,7 @@
             v-model="item.canvas"
             single-line
             :label="$t('canvas')"
-            filled
+            outlined
             rounded
             hide-details
             dense
@@ -33,15 +33,28 @@
       </v-row>
 
       <div class="mt-10">
-        <v-btn class="ma-1" @click="add">{{ $t('add') }}</v-btn>
-        <v-btn class="ma-1" color="success" @click="sample1">{{
-          $t('例1:国絵図の比較')
+        <v-btn class="ma-1" rounded depressed color="info" @click="add">{{
+          $t('add')
         }}</v-btn>
+        <v-btn
+          class="ma-1"
+          rounded
+          depressed
+          color="success"
+          @click="sample1"
+          >{{ $t('例1:国絵図の比較') }}</v-btn
+        >
       </div>
       <div class="mt-5">
-        <v-btn large class="ma-1" color="primary" @click="open">{{
-          $t('open')
-        }}</v-btn>
+        <v-btn
+          large
+          rounded
+          depressed
+          class="ma-1"
+          color="primary"
+          @click="open"
+          >{{ $t('open') }}</v-btn
+        >
       </div>
     </v-container>
   </div>
@@ -76,6 +89,7 @@ export default {
         }
       }
 
+      /*
       this.$router.push(
         this.localePath({
           name: 'mirador',
@@ -84,6 +98,16 @@ export default {
           },
         })
       )
+      */
+      const url = this.localePath({
+        name: 'mirador',
+        query: {
+          q: JSON.stringify(items),
+        },
+      })
+
+      // console.log({ url })
+      window.open(url, '_blank')
     },
     add() {
       this.items.push({
@@ -95,11 +119,11 @@ export default {
       this.items = [
         {
           manifest:
-            'https://www.digital.archives.go.jp/api/iiif/001892030/manifest.json',
+            'https://www.digital.archives.go.jp/api/iiif/764029/manifest.json',
         },
         {
           manifest:
-            'https://www.digital.archives.go.jp/api/iiif/001891946/manifest.json',
+            'https://www.digital.archives.go.jp/api/iiif/764193/manifest.json',
         },
       ]
     },

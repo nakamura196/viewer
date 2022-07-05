@@ -2,19 +2,17 @@
   <div>
     <v-container class="my-5">
       <v-row>
-        <v-col cols="6" md="4" v-for="(item, key) in items" :key="key">
+        <v-col v-for="(item, key) in items" :key="key" cols="6" md="4">
           <v-card class="pa-4" outlined flat>
             <h3>
-            <nuxt-link :to="localePath({name: item.name})">
-              
-              {{item.label}}
-              
-            </nuxt-link>
+              <nuxt-link :to="localePath({ name: item.name })">
+                {{ item.label }}
+              </nuxt-link>
             </h3>
-            <p v-if="item.description">{{item.description}}</p>
+            <p v-if="item.description">{{ item.description }}</p>
           </v-card>
         </v-col>
-        </v-row>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -26,15 +24,15 @@ export default {
     return {
       items: [
         {
-          "label" : this.$t("IIIF Image Downloader"),
-          "name" : "iiif-downloader"
+          label: this.$t('IIIF Image Downloader'),
+          name: 'iiif-downloader',
         },
         {
-          "label" : this.$t("IIIF Viewers"),
-          "name" : "input"
-        }
-      ]
+          label: this.$t('IIIF Viewers'),
+          name: 'input',
+        },
+      ],
     }
-  }
+  },
 }
 </script>
