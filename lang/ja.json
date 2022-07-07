@@ -1,7 +1,7 @@
 {
   "IIIF Viewers": "Mirador 3 による画像比較",
   "ldas": "ldas",
-  "add": "追加",
+  "add": "フォームを追加",
   "open": "開く",
   "manifest": "マニフェスト",
   "canvas": "カンバス",
@@ -12,5 +12,6 @@
   "Download" : "ダウンロード",
   "IIIF Image Downloader" : "IIIF画像ダウンローダー",
   "Version" : "版",
-  "Digital Archive Tools" : "デジタルアーカイブ関連ツール"
+  "Digital Archive Tools" : "デジタルアーカイブ関連ツール",
+  "example": "例"
 }

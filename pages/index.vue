@@ -23,10 +23,12 @@ export default {
   data() {
     return {
       items: [
+        /*
         {
           label: this.$t('IIIF Image Downloader'),
           name: 'iiif-downloader',
         },
+        */
         {
           label: this.$t('IIIF Viewers'),
           name: 'input',

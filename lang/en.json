@@ -1,7 +1,7 @@
 {
-  "IIIF Viewers": "IIIF Viewers",
+  "IIIF Viewers": "Image Comparison",
   "ldas": "ldas",
-  "add": "Add",
+  "add": "Add form",
   "open": "Open",
   "manifest": "Manifest",
   "canvas": "Canvas",
@@ -12,5 +12,6 @@
   "Download" : "Download",
   "IIIF Image Downloader" : "IIIF Image Downloader",
   "Version" : "Version",
-  "Digital Archive Tools" : "Digital Archive Tools"
+  "Digital Archive Tools" : "Digital Archive Tools",
+  "example": "Example"
 }
