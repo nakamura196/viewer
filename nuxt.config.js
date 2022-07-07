@@ -86,12 +86,14 @@ export default {
         property: 'og:description',
         content: siteDesc,
       },
+      /*
       {
         hid: 'og:image',
         property: 'og:image',
         content: `${ogpImages}home.jpg`,
       },
-      { name: 'twitter:card', content: 'summary_large_image' },
+      */
+      { name: 'twitter:card', content: 'summary' },
       // pwa iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       {
