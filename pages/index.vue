@@ -33,6 +33,10 @@ export default {
           label: this.$t('IIIF Viewers'),
           name: 'input',
         },
+        {
+          label: this.$t('コマ数の指定ツール'),
+          name: 'canvas',
+        },
       ],
     }
   },
