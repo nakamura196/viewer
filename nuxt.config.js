@@ -9,10 +9,10 @@ const GOOGLE_ANALYTICS_ID = ''
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          base: '/viewer/',
-        },
-      }
+      router: {
+        base: '/viewer/',
+      },
+    }
     : {}
 
 // path
