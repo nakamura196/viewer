@@ -97,9 +97,8 @@ export default {
           label: '源氏物語',
           items: [
             {
-              manifest:
-                'https://www.dl.ndl.go.jp/api/iiif/3437686/manifest.json',
-              canvas: 'https://www.dl.ndl.go.jp/api/iiif/3437686/canvas/22',
+              manifest: 'https://dl.ndl.go.jp/api/iiif/3437686/manifest.json',
+              canvas: 'https://dl.ndl.go.jp/api/iiif/3437686/canvas/22',
             },
             {
               manifest:
@@ -109,7 +108,7 @@ export default {
             },
             {
               manifest:
-                'https://catalog.lib.kyushu-u.ac.jp/image/manifest/820/411193.json',
+                'https://catalog.lib.kyushu-u.ac.jp/image/manifest/1/820/411193.json',
               canvas:
                 'https://catalog.lib.kyushu-u.ac.jp/image/411193/canvas/p1',
             },
