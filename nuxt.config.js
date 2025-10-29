@@ -25,7 +25,7 @@ const lang = 'ja'
 const siteName = 'Digital Archive Tools'
 env.siteName = siteName
 
-const siteDesc = 'Digital Archive Tools'
+const siteDesc = 'IIIF Image Comparison and Download Tools'
 env.siteDesc = siteDesc
 
 const footer = 'ldas'
@@ -86,14 +86,31 @@ export default {
         property: 'og:description',
         content: siteDesc,
       },
-      /*
       {
         hid: 'og:image',
         property: 'og:image',
         content: `${ogpImages}home.jpg`,
       },
-      */
-      { name: 'twitter:card', content: 'summary' },
+      {
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '1300',
+      },
+      {
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '400',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: siteName,
+      },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      {
+        name: 'twitter:image',
+        content: `${ogpImages}home.jpg`,
+      },
       // pwa iOS
       { name: 'apple-mobile-web-app-capable', content: 'yes' },
       {

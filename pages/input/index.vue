@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-container class="mt-5">
-      <h2>入力フォーム</h2>
+      <h2>{{ $t('Input Form') }}</h2>
 
       <p class="mb-10">
-        比較する画像のマニフェスト（必須）とカンバス（任意）を指定してください。
+        {{ $t('Please specify the manifest (required) and canvas (optional) of the images to compare.') }}
       </p>
 
       <v-row v-for="(item, n) in items" :key="n">
@@ -81,7 +81,7 @@ export default {
     examples() {
       const examples = [
         {
-          label: '国絵図',
+          label: this.$t('Kunizu'),
           items: [
             {
               manifest:
@@ -94,7 +94,7 @@ export default {
           ],
         },
         {
-          label: '源氏物語',
+          label: this.$t('The Tale of Genji'),
           items: [
             {
               manifest: 'https://dl.ndl.go.jp/api/iiif/3437686/manifest.json',

@@ -83,6 +83,48 @@ export default class search extends Vue {
   title: any = process.env.siteName // this.$t(process.env.siteName as any)
   footer: any = process.env.footer // this.$t(process.env.footer as any)
 
+  head() {
+    const locale = this.$i18n.locale
+    const meta = this.$t('meta') as any
+    const baseUrl = process.env.BASE_URL || ''
+    const baseDir = process.env.BASE_DIR || '/'
+    const basePath = baseUrl + baseDir
+    const ogpImage = `${basePath}img/ogp/home.jpg`
+
+    return {
+      htmlAttrs: {
+        lang: locale,
+      },
+      meta: [
+        {
+          hid: 'og:locale',
+          property: 'og:locale',
+          content: meta.locale || 'ja_JP',
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: meta.siteName || 'Digital Archive Tools',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: meta.siteDescription || 'Digital Archive Tools',
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: meta.siteName || 'Digital Archive Tools',
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: meta.siteDescription || 'Digital Archive Tools',
+        },
+      ],
+    }
+  }
+
   onScroll(e: any): void {
     if (typeof window === 'undefined') return
     const top = window.pageYOffset || e.target.scrollTop || 0

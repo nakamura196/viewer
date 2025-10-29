@@ -1,26 +1,47 @@
 # デジタルアーカイブ関連ツール
 
-「Mirador 3による画像比較」と「コマ数の指定ツール」を提供しています。
+日本語 | [English](README.en.md)
 
-## demo
+Mirador 3による画像比較とIIIF画像ダウンローダーを提供するデジタルアーカイブツールです。
+
+## デモ
 
 https://nakamura196.github.io/viewer/
 
-## Build Setup
+## 機能
+
+- **Mirador 3による画像比較**: 複数のIIIF画像を並べて比較できます
+- **IIIF画像ダウンローダー**: IIIFマニフェストから画像をダウンロードできます
+
+## ビルド手順
 
 ```bash
-# install dependencies
+# 依存パッケージのインストール
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# 開発サーバーの起動 (localhost:3000)
 $ yarn dev
 
-# build for production and launch server
+# 本番用ビルドとサーバー起動
 $ yarn build
 $ yarn start
 
-# generate static project
+# 静的サイトの生成
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## 技術スタック
+
+- Nuxt.js
+- Vue.js
+- Vuetify
+- Mirador 3
+- IIIF
+
+## ライセンス
+
+このプロジェクトはApache License 2.0の下でライセンスされています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
+
+## ドキュメント
+
+詳細な説明については、[Nuxt.js docs](https://nuxtjs.org)を参照してください。

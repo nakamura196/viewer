@@ -1,16 +1,16 @@
 <template>
   <div>
     <v-container class="mt-5">
-      <h1>コマ数の指定ツール</h1>
+      <h1>{{ $t('Canvas Number Specification Tool') }}</h1>
 
       <p class="mt-5 mb-10">
-        マニフェストファイルのURLとコマ数を指定してください。
+        {{ $t('Please specify the manifest file URL and canvas number.') }}
       </p>
 
       <v-text-field
         v-model="viewer"
         class="mt-5"
-        :label="$t('ビューアのURL')"
+        :label="$t('Viewer URL')"
         outlined
         rounded
         hide-details
@@ -21,7 +21,7 @@
       <v-text-field
         v-model="manifest"
         class="mt-5"
-        :label="$t('マニフェストファイルのURL')"
+        :label="$t('Manifest File URL')"
         outlined
         rounded
         hide-details
@@ -32,7 +32,7 @@
       <v-text-field
         v-model="pos"
         class="mt-5"
-        :label="$t('コマ数')"
+        :label="$t('Canvas Number')"
         outlined
         rounded
         hide-details
@@ -47,7 +47,7 @@
           class="ma-1"
           color="primary"
           @click="open"
-          >{{ $t('URLを生成') }}</v-btn
+          >{{ $t('Generate URL') }}</v-btn
         >
       </div>
 
@@ -57,9 +57,9 @@
 
       <v-card outlined flat class="mt-10">
         <div class="pa-10">
-          <h3 class="mb-5">入力サポート</h3>
+          <h3 class="mb-5">{{ $t('Input Support') }}</h3>
 
-          <p>次の形式のURLを入力してください。 {url}?manifest={manifest}</p>
+          <p>{{ $t('Please enter URL in the following format: {url}?manifest={manifest}') }}</p>
 
           <v-btn
             class="ma-1"
@@ -70,7 +70,7 @@
               support =
                 'https://clioapi.hi.u-tokyo.ac.jp/mirador/?manifest=https://clioapi.hi.u-tokyo.ac.jp/iiif/81/tdata/imaijikan/01-01_03-21/1/manifest'
             "
-            >例</v-btn
+            >{{ $t('example') }}</v-btn
           >
 
           <v-text-field
