@@ -30,7 +30,7 @@ jobs:
           ${{ runner.os }}-node-
 
     - name: install
-      run: npm ci
+      run: npm ci --legacy-peer-deps
 
     - name: test
       run: npm test
