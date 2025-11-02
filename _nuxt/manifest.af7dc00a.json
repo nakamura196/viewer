@@ -1,7 +1,7 @@
 {
   "name": "Digital Archive Tools",
   "short_name": "IIIF",
-  "description": "Digital Archive Tools",
+  "description": "IIIF Image Comparison and Download Tools",
   "icons": [],
   "start_url": "/viewer/?standalone=true",
   "display": "standalone",
